@@ -1,6 +1,6 @@
 ### Screenshot
 
-![](/dektop_preview.png)
+![](./dektop_preview.png)
 
 ### Links
 
