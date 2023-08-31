@@ -4,7 +4,7 @@
 
 ### Links
 
-- Live Site URL: [click here](https://antonistarzynski.github.io/Password-Generator/)
+- Live Site URL: [click here](https://antonistarzynski.github.io/exercises/)
 
 ### Built with
 
