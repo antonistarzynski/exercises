@@ -1,6 +1,6 @@
 ### Screenshot
 
-![](../workit-landing-page/dektop_preview.png)
+![](/dektop_preview.png)
 
 ### Links
 
