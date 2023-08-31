@@ -15,6 +15,6 @@
 
 ## Author
 
-- Website - [Antek Starzynski](https://www.antekstarzynski.com)
+- Website - [Antek Starzynski](https://www.antoni.works)
 - Frontend Mentor - [@antonistarzynski](https://www.frontendmentor.io/profile/antonistarzynski)
 - Instagram - [@antek.s](https://www.instagram.com/antek.s/)
