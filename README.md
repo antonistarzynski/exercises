@@ -1,6 +1,6 @@
 ### Screenshot
 
-![](./generator_preview.png)
+![](../dektop_preview.png)
 
 ### Links
 
