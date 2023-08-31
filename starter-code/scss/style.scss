@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+}
+
+// colors
+$violet: #24053e;
+$fluo: #44ffa1;
+$lightv: #584d62;
+$whitev: #fcf8ff;
+
+/// mobile
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .circle {
+        width: 2000px;
+        height: 2000px;
+        background-color: $violet;
+        border-radius: 50%;
+        position: absolute;
+        top: -32em;
+        left: 50%;
+        z-index: -1;
+        margin-top: -1000px;
+        margin-left: -1000px;
+    }
+
+    .circle2 {
+        width: 2000px;
+        height: 2000px;
+        background-color: $whitev;
+        border-radius: 50%;
+        position: absolute;
+        top: 28em;
+        left: 50%;
+        z-index: -2;
+        margin-top: -1000px;
+        margin-left: -1000px;
+    }
+
+    .spiral-1 {
+        display: none;
+    }
+
+    .spiral-2 {
+        display: none;
+    }
+
+    .spiral-3 {
+        display: none;
+    }
+
+    .line {
+        width: 152px;
+        height: 3px;
+        position: absolute;
+        background-color: $fluo;
+        top: 10em;
+        left: 35%;
+    }
+
+    .top {
+        padding: 1em;
+        margin-bottom: 3.5em;
+        width: 100%;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1em;
+            margin-bottom: 3em;
+            width: 100%;
+
+            .apply {
+                border-bottom: 3px solid $fluo;
+
+                p {
+                    font-family: "Manrope", sans-serif;
+                    font-size: 1em;
+                    font-weight: 600;
+                    color: white;
+                    transition: 0.25s ease-in-out;
+                }
+
+                p:hover {
+                    color: $fluo;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .slogan {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 50px;
+                line-height: 40px;
+                font-family: "Fraunces", serif;
+                font-weight: 400;
+                text-align: center;
+                color: white;
+                margin-bottom: 0.75em;
+            }
+
+            button {
+                background-color: $fluo;
+                border: 1px solid $fluo;
+                width: 133px;
+                height: 55px;
+                font-weight: bold;
+                transition: 0.25s ease-in-out;
+            }
+
+            button:hover {
+                background-color: rgba($color: #000000, $alpha: 0);
+                color: $fluo;
+                cursor: pointer;
+            }
+        }
+
+        .mobile-illustration {
+            background-image: url(../assets/images/image-hero.webp);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 184px;
+            margin-top: 5em;
+        }
+    }
+
+    .list {
+        padding: 0 1em;
+        margin-bottom: 6em;
+
+        .bullet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3em;
+
+            .pointer {
+                width: 3em;
+                height: 3em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $lightv;
+                border-radius: 100%;
+                margin-bottom: 1em;
+
+                p {
+                    font-family: "Fraunces", serif;
+                    font-size: 20px;
+                    color: $violet;
+                }
+            }
+
+            .content {
+                h2 {
+                    font-family: "Fraunces", serif;
+                    font-size: 28px;
+                    color: $violet;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 0.5em;
+                }
+
+                p {
+                    color: $lightv;
+                    line-height: 28px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .avatar {
+            width: 281px;
+            height: 281px;
+            background-image: url(../assets/images/image-founder.webp);
+            background-size: cover;
+            position: relative;
+            top: 2em;
+            z-index: -1;
+        }
+
+        .about-container {
+            background-color: #24053e;
+            margin: 0 1em;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h2 {
+                color: white;
+                font-family: "Fraunces", serif;
+                font-weight: 400;
+                font-size: 2em;
+                margin-bottom: 1em;
+            }
+
+            p {
+                color: white;
+                font-weight: 400;
+                line-height: 28px;
+                text-align: center;
+                padding: 1 2.5em;
+                margin-bottom: 2em;
+            }
+
+            button {
+                border: 1px solid $fluo;
+                background-color: $fluo;
+                font-weight: bold;
+                width: 172px;
+                height: 55px;
+                transition: 0.25s ease-in-out;
+            }
+
+            button:hover {
+                background-color: rgba($color: #000000, $alpha: 0);
+                color: $fluo;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 6em;
+
+        .company-logo {
+            width: 95.76px;
+            height: 24.61px;
+            margin-bottom: 4em;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            .twitter {
+                padding: 0 28px;
+            }
+
+            .logo {
+                transition: 0.1s ease-in-out;
+            }
+
+            .logo:hover {
+                path {
+                    fill: $violet;
+                }
+            }
+        }
+    }
+}
+
+/// tablet
+
+@media (min-width: 768px) {
+    .container {
+        .circle {
+            top: -24em;
+        }
+
+        .circle2 {
+            top: 30em;
+        }
+
+        .spiral-1 {
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: -225px;
+        }
+
+        .spiral-2 {
+            display: block;
+            position: absolute;
+            top: 300px;
+            right: -50px;
+        }
+
+        .spiral-3 {
+            display: block;
+            position: absolute;
+            top: 1950px;
+            right: 50px;
+            z-index: 3;
+        }
+
+        .line {
+            top: 13.75em;
+            left: 47%;
+            width: 182px;
+        }
+
+        .top {
+            padding: 4em 2.5em;
+
+            .slogan {
+                h1 {
+                    font-size: 60px;
+                    line-height: 60px;
+                }
+            }
+
+            .mobile-illustration {
+                height: 296px;
+            }
+        }
+
+        .list {
+            padding: 0 6em;
+
+            .bullet {
+                flex-direction: row;
+                margin: 0;
+                margin-bottom: 4em;
+                width: 100%;
+
+                .pointer {
+                    margin-right: 2em;
+                    p {
+                        width: 48px;
+                        text-align: center;
+                    }
+                }
+
+                .content {
+                    h2 {
+                        text-align: left;
+                    }
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .about {
+            padding: 0 2em;
+
+            .avatar {
+                align-self: flex-start;
+            }
+
+            .about-container {
+                position: relative;
+                bottom: 10em;
+                align-self: flex-end;
+                width: 70%;
+                z-index: 1;
+                margin: 0;
+                align-items: flex-start;
+                padding: 4em 3em;
+
+                p {
+                    text-align: left;
+                }
+            }
+        }
+
+        .footer {
+            padding: 0em;
+            justify-content: flex-start;
+            margin-bottom: 5em;
+        }
+    }
+}
+
+/// Desktop
+
+@media (min-width: 1440px) {
+    .container {
+        .circle {
+            top: -72em;
+            width: 4000px;
+            height: 4000px;
+            margin-top: -2000px;
+            margin-left: -2000px;
+        }
+
+        .circle2 {
+            width: 4000px;
+            height: 4000px;
+            margin-top: -2000px;
+            margin-left: -2000px;
+            top: -26em;
+        }
+
+        .spiral-1 {
+            top: 10px;
+            left: -160px;
+        }
+
+        .spiral-3 {
+            top: 2150px;
+            right: 250px;
+        }
+
+        .line {
+            top: 14.75em;
+            left: 47%;
+            width: 243px;
+        }
+
+        .top {
+            padding: 4em 12em;
+
+            .header {
+                .apply {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .slogan {
+                h1 {
+                    font-size: 80px;
+                    line-height: 80px;
+                }
+
+                button {
+                    width: 161px;
+                    height: 61px;
+                    font-size: 18px;
+                }
+            }
+
+            .mobile-illustration {
+                width: 100%;
+                height: 441px;
+                margin-top: 5em;
+            }
+        }
+
+        .list {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10em;
+
+            .bullet {
+                flex-direction: column;
+                padding: 0em 2em;
+
+                .pointer {
+                    width: 56px;
+                    height: 56px;
+                    margin-bottom: 3em;
+
+                    p {
+                        font-size: 24px;
+                    }
+                }
+
+                .content {
+                    h2 {
+                        font-size: 32px;
+                        line-height: 40px;
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+
+        .about {
+            padding: 0em 10em;
+
+            .avatar {
+                width: 477px;
+                height: 477px;
+            }
+
+            .about-container {
+                bottom: 15em;
+                padding: 4em 5em;
+
+                h2 {
+                    font-size: 56px;
+                    line-height: 64px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+
+                button {
+                    width: 190px;
+                    height: 61px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@400,500,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .circle {
+  width: 2000px;
+  height: 2000px;
+  background-color: #24053e;
+  border-radius: 50%;
+  position: absolute;
+  top: -32em;
+  left: 50%;
+  z-index: -1;
+  margin-top: -1000px;
+  margin-left: -1000px;
+}
+.container .circle2 {
+  width: 2000px;
+  height: 2000px;
+  background-color: #fcf8ff;
+  border-radius: 50%;
+  position: absolute;
+  top: 28em;
+  left: 50%;
+  z-index: -2;
+  margin-top: -1000px;
+  margin-left: -1000px;
+}
+.container .spiral-1 {
+  display: none;
+}
+.container .spiral-2 {
+  display: none;
+}
+.container .spiral-3 {
+  display: none;
+}
+.container .line {
+  width: 152px;
+  height: 3px;
+  position: absolute;
+  background-color: #44ffa1;
+  top: 10em;
+  left: 35%;
+}
+.container .top {
+  padding: 1em;
+  margin-bottom: 3.5em;
+  width: 100%;
+}
+.container .top .header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 3em;
+  width: 100%;
+}
+.container .top .header .apply {
+  border-bottom: 3px solid #44ffa1;
+}
+.container .top .header .apply p {
+  font-family: "Manrope", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+  transition: 0.25s ease-in-out;
+}
+.container .top .header .apply p:hover {
+  color: #44ffa1;
+  cursor: pointer;
+}
+.container .top .slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .top .slogan h1 {
+  font-size: 50px;
+  line-height: 40px;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin-bottom: 0.75em;
+}
+.container .top .slogan button {
+  background-color: #44ffa1;
+  border: 1px solid #44ffa1;
+  width: 133px;
+  height: 55px;
+  font-weight: bold;
+  transition: 0.25s ease-in-out;
+}
+.container .top .slogan button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #44ffa1;
+  cursor: pointer;
+}
+.container .top .mobile-illustration {
+  background-image: url(../assets/images/image-hero.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 184px;
+  margin-top: 5em;
+}
+.container .list {
+  padding: 0 1em;
+  margin-bottom: 6em;
+}
+.container .list .bullet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3em;
+}
+.container .list .bullet .pointer {
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #584d62;
+  border-radius: 100%;
+  margin-bottom: 1em;
+}
+.container .list .bullet .pointer p {
+  font-family: "Fraunces", serif;
+  font-size: 20px;
+  color: #24053e;
+}
+.container .list .bullet .content h2 {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+  color: #24053e;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+.container .list .bullet .content p {
+  color: #584d62;
+  line-height: 28px;
+  text-align: center;
+}
+.container .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .about .avatar {
+  width: 281px;
+  height: 281px;
+  background-image: url(../assets/images/image-founder.webp);
+  background-size: cover;
+  position: relative;
+  top: 2em;
+  z-index: -1;
+}
+.container .about .about-container {
+  background-color: #24053e;
+  margin: 0 1em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .about .about-container h2 {
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.container .about .about-container p {
+  color: white;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  padding: 1 2.5em;
+  margin-bottom: 2em;
+}
+.container .about .about-container button {
+  border: 1px solid #44ffa1;
+  background-color: #44ffa1;
+  font-weight: bold;
+  width: 172px;
+  height: 55px;
+  transition: 0.25s ease-in-out;
+}
+.container .about .about-container button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #44ffa1;
+  cursor: pointer;
+}
+.container .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6em;
+}
+.container .footer .company-logo {
+  width: 95.76px;
+  height: 24.61px;
+  margin-bottom: 4em;
+}
+.container .footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container .footer .socials .twitter {
+  padding: 0 28px;
+}
+.container .footer .socials .logo {
+  transition: 0.1s ease-in-out;
+}
+.container .footer .socials .logo:hover path {
+  fill: #24053e;
+}
+
+@media (min-width: 768px) {
+  .container .circle {
+    top: -24em;
+  }
+  .container .circle2 {
+    top: 30em;
+  }
+  .container .spiral-1 {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: -225px;
+  }
+  .container .spiral-2 {
+    display: block;
+    position: absolute;
+    top: 300px;
+    right: -50px;
+  }
+  .container .spiral-3 {
+    display: block;
+    position: absolute;
+    top: 1950px;
+    right: 50px;
+    z-index: 3;
+  }
+  .container .line {
+    top: 13.75em;
+    left: 47%;
+    width: 182px;
+  }
+  .container .top {
+    padding: 4em 2.5em;
+  }
+  .container .top .slogan h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .container .top .mobile-illustration {
+    height: 296px;
+  }
+  .container .list {
+    padding: 0 6em;
+  }
+  .container .list .bullet {
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 4em;
+    width: 100%;
+  }
+  .container .list .bullet .pointer {
+    margin-right: 2em;
+  }
+  .container .list .bullet .pointer p {
+    width: 48px;
+    text-align: center;
+  }
+  .container .list .bullet .content h2 {
+    text-align: left;
+  }
+  .container .list .bullet .content p {
+    text-align: left;
+  }
+  .container .about {
+    padding: 0 2em;
+  }
+  .container .about .avatar {
+    align-self: flex-start;
+  }
+  .container .about .about-container {
+    position: relative;
+    bottom: 10em;
+    align-self: flex-end;
+    width: 70%;
+    z-index: 1;
+    margin: 0;
+    align-items: flex-start;
+    padding: 4em 3em;
+  }
+  .container .about .about-container p {
+    text-align: left;
+  }
+  .container .footer {
+    padding: 0em;
+    justify-content: flex-start;
+    margin-bottom: 5em;
+  }
+}
+@media (min-width: 1440px) {
+  .container .circle {
+    top: -72em;
+    width: 4000px;
+    height: 4000px;
+    margin-top: -2000px;
+    margin-left: -2000px;
+  }
+  .container .circle2 {
+    width: 4000px;
+    height: 4000px;
+    margin-top: -2000px;
+    margin-left: -2000px;
+    top: -26em;
+  }
+  .container .spiral-1 {
+    top: 10px;
+    left: -160px;
+  }
+  .container .spiral-3 {
+    top: 2150px;
+    right: 250px;
+  }
+  .container .line {
+    top: 14.75em;
+    left: 47%;
+    width: 243px;
+  }
+  .container .top {
+    padding: 4em 12em;
+  }
+  .container .top .header .apply p {
+    font-size: 18px;
+  }
+  .container .top .slogan h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .container .top .slogan button {
+    width: 161px;
+    height: 61px;
+    font-size: 18px;
+  }
+  .container .top .mobile-illustration {
+    width: 100%;
+    height: 441px;
+    margin-top: 5em;
+  }
+  .container .list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10em;
+  }
+  .container .list .bullet {
+    flex-direction: column;
+    padding: 0em 2em;
+  }
+  .container .list .bullet .pointer {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 3em;
+  }
+  .container .list .bullet .pointer p {
+    font-size: 24px;
+  }
+  .container .list .bullet .content h2 {
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .container .list .bullet .content p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .container .about {
+    padding: 0em 10em;
+  }
+  .container .about .avatar {
+    width: 477px;
+    height: 477px;
+  }
+  .container .about .about-container {
+    bottom: 15em;
+    padding: 4em 5em;
+  }
+  .container .about .about-container h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .container .about .about-container p {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .container .about .about-container button {
+    width: 190px;
+    height: 61px;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
